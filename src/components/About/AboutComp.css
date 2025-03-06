@@ -1,0 +1,78 @@
+.about-inner__area {
+    padding: 130px 0;
+    text-align: center;
+    background-color: #f8f9fc;
+  }
+  
+  .about-inner__subtitle {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .tp-section-title-md {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1d1e4c;
+    margin-bottom: 20px;
+  }
+  
+  .about-inner__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .about-inner__thumb img,
+  .about-inner__thumb-2 img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .about-inner__content-item {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .about-inner__content-item span {
+    font-size: 50px;
+    color: #1d1e4c;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .about-inner__list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about-inner__list li {
+    font-size: 18px;
+    color: #1d1e4c;
+    margin-bottom: 10px;
+  }
+  
+  .about-inner__list li i {
+    color: #00aaff;
+    margin-right: 5px;
+  }
+  
+  .tp-btn-blue-square {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .about-inner__play-btn {
+    font-size: 24px;
+    color: #ff4081;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  

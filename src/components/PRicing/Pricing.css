@@ -1,0 +1,156 @@
+/* 🌟 الحاوية الرئيسية */
+.pricing-container {
+    text-align: center;
+    padding: 50px;
+    background: #f8f9fc;
+    font-family: Arial, sans-serif;
+    direction: rtl; /* جعل النص من اليمين لليسار */
+  }
+  
+  /* 🌟 العناوين */
+  .pricing-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #002855;
+    margin-bottom: 10px;
+  }
+  
+  .pricing-subtitle {
+    font-size: 14px;
+    color: #6c757d;
+    display: block;
+    margin-bottom: 30px;
+  }
+  
+  /* 🌟 البطاقات */
+  .pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* 🌟 تصميم البطاقة */
+  .pricing-card {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: right;
+    transition: 0.3s;
+  }
+  
+  .pricing-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* ⭐ بطاقة الأكثر طلبًا */
+  .pricing-card.popular {
+    background: #017EFA;
+    color: white;
+    border: none;
+  }
+  
+  .popular-badge {
+    background: white;
+    color: #017EFA;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
+  /* 🌟 عنوان الباقة */
+  .pricing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* 🌟 السعر */
+  .pricing-price {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .pricing-price small {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* 🌟 قائمة الميزات */
+  .pricing-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .pricing-features li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: right;
+  }
+  
+  /* ✅ جعل أيقونة الصح على اليمين */
+  .pricing-features img {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px; /* يبعد الأيقونة قليلاً عن النص */
+  }
+  
+  /* 🌟 زر الاشتراك */
+  .pricing-btn {
+    display: block;
+    text-decoration: none;
+    background: #017EFA;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  .pricing-btn:hover {
+    background: #0056b3;
+  }
+  
+  /* زر خاص بالبطاقة الأكثر طلبًا */
+  .pricing-card.popular .pricing-btn {
+    background: white;
+    color: #017EFA;
+  }
+  
+  .pricing-card.popular .pricing-btn:hover {
+    background: #e0e0e0;
+  }
+  
+  /* ✅ جعل التصميم متجاوبًا */
+  @media (max-width: 768px) {
+    .pricing-cards {
+      grid-template-columns: 1fr; /* بطاقة واحدة لكل صف على الجوال */
+    }
+  
+    .pricing-title {
+      font-size: 20px;
+    }
+  
+    .pricing-price {
+      font-size: 20px;
+    }
+  
+    .pricing-features li {
+      font-size: 13px;
+    }
+  }
+  .pricing-features li::before {
+    content: "✔"; /* رمز الصح */
+    color: green; /* لون الصح */
+    font-size: 16px;
+    margin-left: 8px;
+    font-weight: bold;
+  }
+  

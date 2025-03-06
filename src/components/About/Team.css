@@ -1,0 +1,115 @@
+/* App.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .tp-team__area {
+    position: relative;
+  }
+  
+  .tp-team__grey-bg {
+    background-color: #f8f9fa;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+  }
+  
+  .tp-team__ml-mr {
+    background-color: #343a40;
+    padding: 120px 0 50px;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  
+  .col-12, .col-xl-3, .col-lg-3, .col-md-6, .col-sm-6 {
+    padding: 15px;
+  }
+  
+  .tp-team__section-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .tp-section-title-md {
+    font-size: 2.5rem;
+    color: white;
+    line-height: 1.2;
+  }
+  
+  .tp-team__btn {
+    display: flex;
+  }
+  
+  .tp-btn-pink, .tp-btn-sky-sm {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  .tp-btn-pink {
+    background-color: #e83e8c;
+  }
+  
+  .tp-btn-sky-sm {
+    background-color: #17a2b8;
+    margin-left: 15px;
+  }
+  
+  .tp-team__item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .tp-team__img img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .tp-team__content h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 15px;
+  }
+  
+  .tp-team__content span {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .tp-team__social {
+    margin-top: 15px;
+  }
+  
+  .tp-team__social a {
+    color: #333;
+    margin: 0 5px;
+    font-size: 1.2rem;
+  }
+  
+  .tp-team__social a:hover {
+    color: #007bff;
+  }

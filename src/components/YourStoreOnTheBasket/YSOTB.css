@@ -1,0 +1,86 @@
+.cta-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eef7ff;
+    padding: 50px 0;
+  }
+  
+  .cta-wrapper {
+    position: relative;
+    background-color: #0c0c63;
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  .cta-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #43c0f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #017efa;
+  }
+  
+  /* Shapes */
+  .cta-shape {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    opacity: 0.7;
+  }
+  
+  .cta-shape-1 {
+    top: 10px;
+    left: 20px;
+    background: url("https://murseell.com/assets/frontend/img/cta/cta-shape-1.png")
+      no-repeat center/contain;
+  }
+  
+  .cta-shape-2 {
+    top: 40px;
+    right: 20px;
+    background: url("https://murseell.com/assets/frontend/img/cta/cta-shape-2.png")
+      no-repeat center/contain;
+  }
+  
+  .cta-shape-3 {
+    bottom: 30px;
+    left: 50px;
+    background: url("https://murseell.com/assets/frontend/img/cta/cta-shape-3.png")
+      no-repeat center/contain;
+  }
+  
+  .cta-shape-4 {
+    bottom: 20px;
+    right: 60px;
+    background: url("https://murseell.com/assets/frontend/img/cta/cta-shape-4.png")
+      no-repeat center/contain;
+  }
+  
+  .cta-shape-5 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("https://murseell.com/assets/frontend/img/cta/cta-shape-5.png")
+      no-repeat center/contain;
+    width: 60px;
+    height: 60px;
+  }
+  

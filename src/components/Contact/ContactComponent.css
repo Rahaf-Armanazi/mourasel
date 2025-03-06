@@ -1,0 +1,151 @@
+/* ContactComponent.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .breadcrumb__area {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    position: relative;
+  }
+  
+  .breadcrumb__scroll-bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .breadcrumb__scroll-bottom a {
+    color: #333;
+    font-size: 1.5rem;
+  }
+  
+  .breadcrumb__content {
+    text-align: center;
+  }
+  
+  .breadcrumb__title {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .breadcrumb__list {
+    margin-top: 10px;
+  }
+  
+  .breadcrumb__list span {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .breadcrumb__list .dvdr {
+    margin: 0 10px;
+  }
+  
+  .tp-conatact-area {
+    padding: 125px 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  
+  .col-xl-4, .col-lg-4, .col-md-4, .col-12, .col-8, .col-lg-6, .col-md-6 {
+    padding: 15px;
+  }
+  
+  .contact-info {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-icon {
+    font-size: 2rem;
+    color: #007bff;
+  }
+  
+  .contact-info h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 15px;
+  }
+  
+  .contact-info span {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .contact-form-box {
+    background-color: white;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .tp-contact-input {
+    margin-bottom: 20px;
+  }
+  
+  .tp-contact-input input, .tp-contact-input textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .tp-contact-input textarea {
+    height: 150px;
+  }
+  
+  .tp-submit-button {
+    text-align: center;
+  }
+  
+  .tp-btn-blue-square {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .alert-success {
+    background-color: #d4edda;
+    color: #155724;
+  }

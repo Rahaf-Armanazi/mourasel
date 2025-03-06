@@ -1,0 +1,78 @@
+/* ضبط الخط الأساسي */
+body {
+    font-family: "Tajawal", sans-serif;
+  }
+  
+  /* الحاوية الرئيسية */
+  .whatsapp-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 50px 10%;
+    background-color: #f8f9fc;
+  }
+  
+  /* النصوص والتفاصيل */
+  .whatsapp-content {
+    max-width: 500px;
+    text-align: right;
+  }
+  
+  .whatsapp-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #061c50;
+    margin-bottom: 15px;
+  }
+  
+  .whatsapp-description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  /* زر البدء */
+  .whatsapp-button {
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* صورة الهاتف */
+  .whatsapp-image img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* جعل التصميم متجاوبًا */
+  @media (max-width: 768px) {
+    .whatsapp-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px 5%;
+    }
+  
+    .whatsapp-content {
+      text-align: center;
+    }
+  
+    .whatsapp-image img {
+      max-width: 280px;
+    }
+  }
+  

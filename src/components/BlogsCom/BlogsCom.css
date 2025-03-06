@@ -1,0 +1,159 @@
+/* تعيين الخطوط الأساسية */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* تنسيق الحاوية الرئيسية */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/* تنسيق منطقة البحث */
+.sidebar__widget {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.sidebar__widget-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1a237e;
+    margin-bottom: 15px;
+}
+
+.sidebar__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: #e3f2fd;
+    border-radius: 8px;
+}
+
+.sidebar__search input {
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 10px;
+    flex-grow: 1;
+    font-size: 16px;
+    color: #616161;
+}
+
+.sidebar__search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar__search i {
+    font-size: 16px;
+    color: #333;
+}
+
+/* تنسيق مربع التنبيه */
+.alert {
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.alert-warning {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+/* تنسيق الجدول */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead {
+    background: #f1f1f1;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* تنسيق الزر الخاص بالـ Action */
+.btn-group {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dropdown-menu {
+    min-width: 150px;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+}
+
+.dropdown-item i {
+    margin-right: 5px;
+}
+
+/* تحسين تصميم الأزرار */
+button,
+.btn {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-neutral {
+    background: #f8f9fa;
+    color: #333;
+}
+
+.btn-neutral:hover {
+    background: #e2e6ea;
+}
+
+/* تحسين استجابة الصفحة */
+@media (max-width: 768px) {
+    .container {
+        padding: 50px 20px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .sidebar__widget {
+        margin-top: 20px;
+    }
+
+    .table {
+        display: block;
+        overflow-x: auto;
+    }
+}

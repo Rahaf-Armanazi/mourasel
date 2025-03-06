@@ -1,0 +1,118 @@
+.choose-area {
+  text-align: center;
+  background: url("https://murseell.com/assets/frontend/img/choose/choose-bg.png")
+    no-repeat center center/cover;
+  padding: 50px 0;
+}
+
+.choose-title-box {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.choose-subtitle {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.choose-thumb-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.choose-thumb img {
+  width: 180px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.choose-thumb img:hover {
+  transform: scale(1.1);
+}
+
+/* استجابة التصميم */
+@media (max-width: 768px) {
+  .choose-thumb-box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  display: block;
+  max-width: 1320px;
+}
+.counter-area {
+    position: relative;
+    background: linear-gradient(to right, #2c3e50, #4ca1af); /* تدرج ألوان جميل */
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .counter-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .counter-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .counter-icon img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+  }
+  
+  .counter-content {
+    text-align: center;
+  }
+  
+  .counter-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .counter-content p {
+    margin: 5px 0 0;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* استجابة التصميم */
+  @media (max-width: 768px) {
+    .counter-item {
+      flex-direction: column;
+      text-align: center;
+    }
+    .counter-icon img {
+      margin-bottom: 10px;
+    }
+  }
+  .r1 {
+    margin-top: -7%;
+    position: relative;
+    /* background: linear-gradient(to right, #2c3e50, #4ca1af); */
+    padding: 60px 0;
+    text-align: center;
+}
