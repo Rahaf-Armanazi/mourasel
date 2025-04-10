@@ -1,0 +1,158 @@
+/* Login.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl; /* Right-to-left for Arabic */
+  }
+  
+  .breadcrumb__area {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    position: relative;
+  }
+  
+  .breadcrumb__scroll-bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .breadcrumb__scroll-bottom a {
+    color: #333;
+    font-size: 1.5rem;
+  }
+  
+  .tp-login-area {
+    padding: 125px 0;
+  }
+  
+  .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .col-xl-6, .col-lg-6, .col-12 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .tp-login-thumb {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tp-login-thumb img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .tp-login-wrapper {
+    padding: 20px;
+  }
+  
+  .tplogin {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .tplogin__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .tp-login-title {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .tplogin__form {
+    width: 100%;
+  }
+  
+  .tp-mail, .tp-password {
+    margin-bottom: 20px;
+  }
+  
+  .tp-mail label, .tp-password label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .tp-mail input, .tp-password input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .tp-forgot-password {
+    margin-bottom: 20px;
+  }
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox input {
+    margin-left: 10px;
+  }
+  
+  .forgot a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .tp-login-button {
+    margin-bottom: 20px;
+  }
+  
+  .tp-btn-blue-square {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .tp-signup {
+    font-size: 0.9rem;
+  }
+  
+  .tp-signup a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .invalid-feedback {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 5px;
+  }

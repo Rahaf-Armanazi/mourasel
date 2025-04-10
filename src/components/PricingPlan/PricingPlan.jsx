@@ -12,7 +12,9 @@ const PricingPlan = () => {
     "/contactus": "اتصل بنا",
     "/blogs": "Recent Blogs",
     "/features": "مميزاتنا",
-    "/faq": "اطرح سؤالاً"
+    "/faq": "اطرح سؤالاً",
+    "/login": "تسجيل الدخول",
+    "/resetpassword": "تغيير كلمة المرور",
   };
 
   const pageTitle = titles[location.pathname.toLowerCase().trim()] || "الصفحة"; // العنوان الافتراضي

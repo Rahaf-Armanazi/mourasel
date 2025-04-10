@@ -1,0 +1,65 @@
+/* Features.css */
+
+.tp-service__item {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+  }
+  
+  .tp-service__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+  }
+  
+  .tp-service__icon {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .tp-service__icon img {
+    max-width: 80px;
+    height: auto;
+  }
+  
+  .tp-service__content {
+    text-align: center;
+  }
+  
+  .tp-service__title-sm {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .tp-service__title-sm a {
+    text-decoration: none;
+    color: #222;
+  }
+  
+  .tp-service__title-sm a:hover {
+    color: #0099ff;
+  }
+  
+  .tp-service__content p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .tp-service__link {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .tp-service__link a {
+    display: inline-block;
+    color: #0099ff;
+    transition: color 0.3s;
+  }
+  
+  .tp-service__link a:hover {
+    color: #005fa3;
+  }
+  

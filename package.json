@@ -16,6 +16,7 @@
     "@mui/icons-material": "^6.4.5",
     "@mui/material": "^6.4.5",
     "@mui/x-data-grid": "^7.27.1",
+    "axios": "^1.8.4",
     "bootstrap": "^5.3.3",
     "font-awesome": "^4.7.0",
     "mourasel": "file:",

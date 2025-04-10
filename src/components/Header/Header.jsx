@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Header.css"; // استيراد التنسيقات
 
-const Header = () => {
+const Header = ({isAuthenticated}) => {
   return (
     <header className="tp-header">
       <div className="container-fluid">
@@ -45,7 +45,7 @@ const Header = () => {
           </div>
 
           {/* الزر */}
-          <div className="col-xl-3 col-lg-3 col-md-6 col-6 d-flex justify-content-end">
+          {/* <div className="col-xl-3 col-lg-3 col-md-6 col-6 d-flex justify-content-end">
             <a
               className="tp-btn-blue d-none d-md-block"
               href="https://murseell.com/login"
@@ -55,7 +55,23 @@ const Header = () => {
             <button className="tp-menu-bar d-lg-none">
               <i className="far fa-bars"></i>
             </button>
-          </div>
+          </div> */
+          <div className="col-xl-3 col-lg-3 col-md-6 col-5 d-flex align-items-center justify-content-end">
+          {!isAuthenticated && (
+            <a className="tp-btn-blue-square d-none d-lg-block" href="/login">
+              <span>تسجيل الدخول</span>
+            </a>
+          )}
+          <a
+            className="tp-btn-blue-square d-none d-md-block"
+            href={isAuthenticated ? "/dashboard" : "/pricing"}
+          >
+            <span>{isAuthenticated ? "لوحة التحكم" : "ابدأ الآن"}</span>
+          </a>
+          <button className="tp-header__bars tp-menu-bar d-lg-none">
+            <i className="far fa-bars"></i>
+          </button>
+        </div>}
         </div>
       </div>
     </header>
