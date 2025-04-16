@@ -1,16 +1,17 @@
-// TestimonialSection.jsx
+// Index1testimonial.jsx
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Index1testimonial.css'; // لو عندك CSS خاص
 
 const Index1testimonial = () => {
-// Testimonials.jsx
-
   const [testimonials, setTestimonials] = useState([]);
 
   useEffect(() => {
-    axios.get('/api/testimonials') // غيري المسار حسب باك إندك
-      .then(res => setTestimonials(res.data))
+    axios.get('http://localhost:2002/testimonials') // عدلي المسار حسب باك إندك
+      .then(res => {
+        console.log("TESTIMONIALS DATA ===>", res.data);
+        setTestimonials(res.data.testimonials || []);
+      })
       .catch(err => console.error('Error fetching testimonials:', err));
   }, []);
 
@@ -27,7 +28,7 @@ const Index1testimonial = () => {
 
         <div className="tp-testimonial__section">
           <div className="tp-testimonial__active">
-            {testimonials.map((testimonial, index) => (
+            {Array.isArray(testimonials) && testimonials.map((testimonial, index) => (
               <div
                 key={index}
                 className="tp-testimonial__slider-item d-flex align-items-center p-relative"

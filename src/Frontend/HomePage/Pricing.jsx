@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import './Pricing.css';
 
 const Pricing = () => {
   const [plans, setPlans] = useState([]);
 
   useEffect(() => {
     // Fetch pricing plans data from the backend
-    axios.get('/api/plans') // Adjust the URL based on your backend's API endpoint
+    axios.get('http://localhost:2002/pricing') // Adjust the URL based on your backend's API endpoint
       .then(response => {
         setPlans(response.data.plans);
       })

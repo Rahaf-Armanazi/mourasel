@@ -1,0 +1,100 @@
+.account-area {
+    padding-top: 120px;
+    direction: rtl;
+  }
+  
+  .account-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .account-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .account-left,
+  .account-right {
+    width: 100%;
+    max-width: 50%;
+    padding: 15px;
+  }
+  
+  .account-wrapper {
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+  }
+  
+  .account-section-box {
+    margin-bottom: 20px;
+  }
+  
+  .account-input input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .account-form button {
+    padding: 12px 20px;
+    background-color: #017EFA;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .account-thumb-wrapper {
+    position: relative;
+    text-align: center;
+  }
+  
+  .account-thumb img {
+    max-width: 100%;
+  }
+  
+  .account-sm-img-1,
+  .account-sm-img-2 {
+    position: absolute;
+    display: block;
+  }
+  
+  .account-sm-img-1 {
+    top: 10%;
+    right: 10%;
+  }
+  
+  .account-sm-img-2 {
+    bottom: 10%;
+    left: 10%;
+  }
+  
+  /* Animations */
+  .fade-left, .fade-right {
+    opacity: 0;
+    transition: all 0.9s ease;
+  }
+  
+  .fade-left {
+    transform: translateX(-40px);
+  }
+  
+  .fade-right {
+    transform: translateX(40px);
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .account-message {
+    margin-top: 10px;
+    color: #017EFA;
+    font-weight: bold;
+  }
+    

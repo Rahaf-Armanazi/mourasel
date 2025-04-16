@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import "./YSOTB.css";
+import "./CtaArea.css";
 
-const YSOTB = () => {
+const CtaArea = () => {
   const contentRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -68,4 +68,4 @@ const YSOTB = () => {
   );
 };
 
-export default YSOTB;
+export default CtaArea;

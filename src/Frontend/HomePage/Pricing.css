@@ -1,0 +1,138 @@
+.tp-price__area {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+  }
+  
+  .tp-price__section h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .tp-price__section span {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .tp-price__item {
+    padding: 30px;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border: 0.5px solid var(--tp-common-sky, #ddd);
+  }
+  
+  .tp-price__active {
+    background-color: #017EFA !important;
+    color: #fff !important;
+    box-shadow: 0 10px 20px rgba(1, 126, 250, 0.2);
+  }
+  
+  .tp-price__title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .tp-price__small_title {
+    font-size: 16px;
+    font-weight: 400;
+    color: inherit;
+  }
+  
+  .tp-price__icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 17px;
+    width: 100%;
+  }
+  
+  .tp-price__list ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .tp-price__list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: inherit;
+  }
+  
+  .tp-price__list li img {
+    margin-right: 10px;
+  }
+  
+  .tp-price__btn {
+    margin-top: 25px;
+  }
+  
+  .tp-btn-border {
+    display: inline-block;
+    padding: 10px 24px;
+    border: 2px solid currentColor;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .tp-btn-border:hover {
+    background-color: white;
+    color: #017EFA;
+  }
+  
+  /* 💡 Responsive Design */
+  
+  @media (max-width: 992px) {
+    .tp-price__title {
+      font-size: 26px;
+    }
+  
+    .tp-price__item {
+      margin-bottom: 20px;
+    }
+  
+    .tp-price__section h3 {
+      font-size: 22px;
+    }
+  
+    .tp-price__icon span {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .tp-price__area {
+      padding: 40px 15px;
+    }
+  
+    .tp-price__title {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .tp-price__item {
+      padding: 20px;
+    }
+  
+    .tp-price__icon {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .tp-price__btn {
+      text-align: center;
+    }
+  }
+  

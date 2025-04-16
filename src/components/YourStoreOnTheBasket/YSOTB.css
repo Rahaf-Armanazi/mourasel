@@ -1,86 +1,110 @@
 .cta-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #eef7ff;
-    padding: 50px 0;
+  position: relative;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #f0f8ff, #e0f3ff);
+  overflow: hidden;
+}
+
+.cta-grey-bg,
+.cta-white-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cta-grey-bg {
+  background-color: #f5faff;
+  z-index: 0;
+}
+
+.cta-white-bg {
+  background-color: #ffffff;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.cta-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.cta-wrapper {
+  background-color: #017efa;
+  border-radius: 20px;
+  padding: 60px 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-title {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 30px;
+  animation: fadeUp 0.9s ease forwards;
+  opacity: 0;
+  animation-delay: 0.3s;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #00c3ff;
+  color: #fff;
+  padding: 14px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  animation: fadeUp 0.9s ease forwards;
+  opacity: 0;
+  animation-delay: 0.5s;
+}
+
+.cta-btn:hover {
+  background-color: #009acc;
+}
+
+.cta-shape {
+  position: absolute;
+  z-index: 0;
+}
+
+.cta-shape img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Positions for shapes */
+.cta-shape-1 { top: -20px; left: -20px; }
+.cta-shape-2 { top: 0; right: 0; }
+.cta-shape-3 { bottom: 0; left: 10%; }
+.cta-shape-4 { bottom: -10px; right: 5%; }
+.cta-shape-5 { top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.1; }
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
   }
-  
-  .cta-wrapper {
-    position: relative;
-    background-color: #0c0c63;
-    padding: 50px;
-    border-radius: 15px;
-    text-align: center;
-    color: white;
-    width: 80%;
-    max-width: 800px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .cta-title {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .cta-button {
-    display: inline-block;
-    padding: 12px 20px;
-    background-color: #43c0f6;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
-  
-  .cta-button:hover {
-    background-color: #017efa;
-  }
-  
-  /* Shapes */
-  .cta-shape {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    opacity: 0.7;
-  }
-  
-  .cta-shape-1 {
-    top: 10px;
-    left: 20px;
-    background: url("https://murseell.com/assets/frontend/img/cta/cta-shape-1.png")
-      no-repeat center/contain;
-  }
-  
-  .cta-shape-2 {
-    top: 40px;
-    right: 20px;
-    background: url("https://murseell.com/assets/frontend/img/cta/cta-shape-2.png")
-      no-repeat center/contain;
-  }
-  
-  .cta-shape-3 {
-    bottom: 30px;
-    left: 50px;
-    background: url("https://murseell.com/assets/frontend/img/cta/cta-shape-3.png")
-      no-repeat center/contain;
-  }
-  
-  .cta-shape-4 {
-    bottom: 20px;
-    right: 60px;
-    background: url("https://murseell.com/assets/frontend/img/cta/cta-shape-4.png")
-      no-repeat center/contain;
-  }
-  
-  .cta-shape-5 {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: url("https://murseell.com/assets/frontend/img/cta/cta-shape-5.png")
-      no-repeat center/contain;
-    width: 60px;
-    height: 60px;
-  }
-  
+}
+
+.cta-fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease;
+}
+
+.cta-fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
